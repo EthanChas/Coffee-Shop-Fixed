@@ -205,7 +205,7 @@ Part185 = Instance.new("Part")
 Part186 = Instance.new("Part")
 Part187 = Instance.new("Part")
 Part188 = Instance.new("Part")
-Model189 = Instance.new("Model")
+Folder189 = Instance.new("Folder")
 Script190 = Instance.new("Script")
 Part191 = Instance.new("Part")
 SurfaceGui192 = Instance.new("SurfaceGui")
@@ -911,6 +911,9 @@ SurfaceGui891 = Instance.new("SurfaceGui")
 TextBox892 = Instance.new("TextBox")
 LocalScript893 = Instance.new("LocalScript")
 Part894 = Instance.new("Part")
+Part895 = Instance.new("Part")
+ClickDetector896 = Instance.new("ClickDetector")
+Script897 = Instance.new("Script")
 Folder0.Name = "coffee shop"
 Folder0.Parent = mas
 Model1.Name = "Main"
@@ -2758,14 +2761,14 @@ Part188.Material = Enum.Material.Metal
 Part188.Reflectance = 0.4000000059604645
 Part188.TopSurface = Enum.SurfaceType.Smooth
 Part188.brickColor = BrickColor.new("Dark stone grey")
-Model189.Name = "Scrips :>"
-Model189.Parent = Model1
-Script190.Parent = Model189
+Folder189.Name = "Scripts"
+Folder189.Parent = Model1
+Script190.Parent = Folder189
 table.insert(cors,sandbox(Script190,function()
-while wait(8) do
+while wait(15) do
 	for _, I in pairs(script.Parent.Parent:GetDescendants()) do
 		if I:IsA("Part") or I:IsA("Wedge") then
-			I.Locked = false
+			I.Locked = true
 			--print("I think its locked/1/!")
 		end
 	end
@@ -10439,6 +10442,28 @@ Part894.BrickColor = BrickColor.new("Dark taupe")
 Part894.Material = Enum.Material.SmoothPlastic
 Part894.TopSurface = Enum.SurfaceType.Smooth
 Part894.brickColor = BrickColor.new("Dark taupe")
+Part895.Parent = Model1
+Part895.CFrame = CFrame.new(-55.442894, 0.516854882, -241.597717, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Part895.Orientation = Vector3.new(0, -90, 0)
+Part895.Position = Vector3.new(-55.442893981933594, 0.5168548822402954, -241.59771728515625)
+Part895.Rotation = Vector3.new(0, -90, 0)
+Part895.Color = Color3.new(0.843137, 0.772549, 0.603922)
+Part895.Transparency = 1
+Part895.Size = Vector3.new(3.879999876022339, 0.7300000190734863, 3.9331934452056885)
+Part895.Anchored = true
+Part895.BottomSurface = Enum.SurfaceType.Smooth
+Part895.BrickColor = BrickColor.new("Brick yellow")
+Part895.Material = Enum.Material.WoodPlanks
+Part895.TopSurface = Enum.SurfaceType.Smooth
+Part895.brickColor = BrickColor.new("Brick yellow")
+ClickDetector896.Parent = Part895
+Script897.Parent = Part895
+table.insert(cors,sandbox(Script897,function()
+script.Parent.ClickDetector.MouseClick:Connect(function(player)
+	player:Kick(" \n \n OwO \n You found my secewt basement1! OwO1!!")
+	print("Player was kicked from basement:"..player.Name.. " LOL")
+end)
+end))
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = script
 	pcall(function() v:MakeJoints() end)
