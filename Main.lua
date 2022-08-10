@@ -7710,7 +7710,7 @@ script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
 
 end))
 for i,v in pairs(mas:GetChildren()) do
-	v.Parent = script
+	v.Parent = workspace
 	pcall(function() v:MakeJoints() end)
 end
 mas:Destroy()
