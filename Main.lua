@@ -4859,11 +4859,11 @@ script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
 end))
 Part417.Name = "Getout"
 Part417.Parent = Model8
-Part417.CFrame = CFrame.new(-59.3437881, 0.527366161, -227.943298, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part417.Position = Vector3.new(-59.343788146972656, 0.5273661613464355, -227.94329833984375)
+Part417.CFrame = CFrame.new(-59.9437866, 0.527366161, -227.943298, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part417.Position = Vector3.new(-59.94378662109375, 0.5273661613464355, -227.94329833984375)
 Part417.Color = Color3.new(0.431373, 0.6, 0.792157)
 Part417.Transparency = 1
-Part417.Size = Vector3.new(15.138415336608887, 0.019999027252197266, 16.5)
+Part417.Size = Vector3.new(13.93841552734375, 0.019999027252197266, 16.5)
 Part417.Anchored = true
 Part417.BottomSurface = Enum.SurfaceType.Smooth
 Part417.BrickColor = BrickColor.new("Medium blue")
