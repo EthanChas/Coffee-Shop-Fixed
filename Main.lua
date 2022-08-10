@@ -2765,7 +2765,7 @@ table.insert(cors,sandbox(Script190,function()
 while wait(0.000000001) do
 	for _, I in pairs(script.Parent.Parent:GetDescendants()) do
 		if I:IsA("Part") or I:IsA("Wedge") then
-			I.Locked = true
+			I.Locked = false
 			--print("I think its locked/1/!")
 		end
 	end
