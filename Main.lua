@@ -981,8 +981,6 @@ Part961 = Instance.new("Part")
 Part962 = Instance.new("Part")
 Part963 = Instance.new("Part")
 Part964 = Instance.new("Part")
-Part965 = Instance.new("Part")
-Decal966 = Instance.new("Decal")
 Folder0.Name = "coffee shop"
 Folder0.Parent = mas
 Model1.Name = "Main"
@@ -11143,20 +11141,6 @@ Part964.Material = Enum.Material.Wood
 Part964.TopSurface = Enum.SurfaceType.Smooth
 Part964.brickColor = BrickColor.new("Dark taupe")
 Part964.Shape = Enum.PartType.Cylinder
-Part965.Parent = Model1
-Part965.CFrame = CFrame.new(-51.0481873, 5.51156092, -211.318787, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-Part965.Orientation = Vector3.new(0, -90, 0)
-Part965.Position = Vector3.new(-51.048187255859375, 5.511560916900635, -211.31878662109375)
-Part965.Rotation = Vector3.new(0, -90, 0)
-Part965.Transparency = 1
-Part965.Size = Vector3.new(4.5, 4.449997901916504, 0.10999999940395355)
-Part965.Anchored = true
-Part965.BottomSurface = Enum.SurfaceType.Smooth
-Part965.TopSurface = Enum.SurfaceType.Smooth
-Decal966.Name = "Fixed Menu"
-Decal966.Parent = Part965
-Decal966.Texture = "http://www.roblox.com/asset/?id=10548737849"
-Decal966.Face = Enum.NormalId.Back
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = script
 	pcall(function() v:MakeJoints() end)
