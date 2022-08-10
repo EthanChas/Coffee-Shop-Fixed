@@ -2762,7 +2762,7 @@ Model189.Name = "Scrips :>"
 Model189.Parent = Model1
 Script190.Parent = Model189
 table.insert(cors,sandbox(Script190,function()
-while wait(0.000000001) do
+while wait(8) do
 	for _, I in pairs(script.Parent.Parent:GetDescendants()) do
 		if I:IsA("Part") or I:IsA("Wedge") then
 			I.Locked = false
