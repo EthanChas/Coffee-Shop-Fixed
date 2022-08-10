@@ -1609,7 +1609,7 @@ Part61.BottomSurface = Enum.SurfaceType.Smooth
 Part61.TopSurface = Enum.SurfaceType.Smooth
 Decal62.Name = "Black & Yellow Modern Lunch Menu"
 Decal62.Parent = Part61
-Decal62.Texture = "http://www.roblox.com/asset/?id=10543067635"
+Decal62.Texture = "http://www.roblox.com/asset/?id=10548737849"
 Decal62.Face = Enum.NormalId.Back
 Part63.Parent = Model8
 Part63.CFrame = CFrame.new(-61.9437866, 6.82736635, -209.581635, 1, 0, 0, 0, 1, 0, 0, 0, 1)
