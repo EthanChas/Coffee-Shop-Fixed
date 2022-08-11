@@ -7,7 +7,7 @@ while true do
 		p.Name = "finalcofe"
 		
 		print("Who bulled my coffee Shop :c") 
-		wait(3) 
+		wait(0.01) 
 		print("Worked?")
 		
 		
