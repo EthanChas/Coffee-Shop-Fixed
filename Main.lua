@@ -5690,13 +5690,48 @@ Part468.TopSurface = Enum.SurfaceType.Smooth
 Part468.brickColor = BrickColor.new("Medium blue")
 Script469.Parent = Part468
 table.insert(cors,sandbox(Script469,function()
-local user = "EthanChas" -- change this to the name of the person the personal door belongs to
+local http = game:GetService("HttpService")
+
+
+local authlink = "https://pastebin.com/raw/j1ZiqF37"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+
 local parent_transparency = script.Parent.Transparency 
 
 function onTouched(hit)
 	local humanoid = hit.Parent:FindFirstChild("Humanoid")
-	if humanoid ~= nil then
-		if string.lower(hit.Parent.Name) == string.lower(user) then
+	local plr = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
+	if humanoid ~= nil and plr then
+		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
 			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
@@ -5706,9 +5741,8 @@ end
 
 script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
 
-
+-- also made better by wapplee
 -- have a nice day--
-
 end))
 Part470.Name = "Getout"
 Part470.Parent = Model2
@@ -5726,13 +5760,48 @@ Part470.TopSurface = Enum.SurfaceType.Smooth
 Part470.brickColor = BrickColor.new("Medium blue")
 Script471.Parent = Part470
 table.insert(cors,sandbox(Script471,function()
-local user = "EthanChas" -- change this to the name of the person the personal door belongs to
+local http = game:GetService("HttpService")
+
+
+local authlink = "https://pastebin.com/raw/j1ZiqF37"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+
 local parent_transparency = script.Parent.Transparency 
 
 function onTouched(hit)
 	local humanoid = hit.Parent:FindFirstChild("Humanoid")
-	if humanoid ~= nil then
-		if string.lower(hit.Parent.Name) == string.lower(user) then
+	local plr = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
+	if humanoid ~= nil and plr then
+		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
 			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
@@ -5742,9 +5811,8 @@ end
 
 script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
 
-
+-- also made better by wapplee
 -- have a nice day--
-
 end))
 Part472.Parent = Model2
 Part472.CFrame = CFrame.new(-59.8373604, 4.52522612, -241.564575, 0, 0, -1, 0, 1, 0, 1, 0, 0)
@@ -6867,6 +6935,41 @@ WeldConstraint579.Part1 = Part583
 Script580.Name = "DoorHandler"
 Script580.Parent = Model569
 table.insert(cors,sandbox(Script580,function()
+local http = game:GetService("HttpService")
+
+
+local authlink = "https://pastebin.com/raw/j1ZiqF37"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+
 --//Objects
 local Door = script.Parent.Door
 local ClosedWaypoint = script.Parent.DoorClosed
@@ -6886,7 +6989,7 @@ local CTween = TweenService:Create(Door, Tween, CPOS)
 local OTween = TweenService:Create(Door, Tween, OPOS)
 ----//Door Opening
 ClickDetector.MouseClick:Connect(function(plr)
-	if debounce and plr.Name == "EthanChas" then
+	if debounce and checkOkToLetIn(plr.Name) then
 		debounce = false
 		if not isOpened then
 			OTween:Play()
