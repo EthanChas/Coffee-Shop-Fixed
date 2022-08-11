@@ -1027,6 +1027,7 @@ Part1007 = Instance.new("Part")
 SpecialMesh1008 = Instance.new("SpecialMesh")
 Part1009 = Instance.new("Part")
 SpecialMesh1010 = Instance.new("SpecialMesh")
+Part1011 = Instance.new("Part")
 Folder0.Name = "coffee shop"
 Folder0.Parent = mas
 Model1.Parent = Folder0
@@ -1326,6 +1327,7 @@ script.Parent.Touched:connect(function(h)
 	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Hot Chocolate"
+		h.Parent.Steam.Steam.Enabled = true
 		if h.Parent:FindFirstChild("drink") ~= nil then
 			h.Parent.drink.Transparency = 0
 			h.Parent.drink.BrickColor = BrickColor.new("Brown")
@@ -1903,11 +1905,11 @@ TextBox93.BackgroundColor = BrickColor.new("Lime green")
 TextBox93.BackgroundColor3 = Color3.new(0.333333, 1, 0)
 TextBox93.BackgroundTransparency = 1
 TextBox93.Font = Enum.Font.Merriweather
-TextBox93.FontSize = Enum.FontSize.Size32
+TextBox93.FontSize = Enum.FontSize.Size24
 TextBox93.Text = "- Chocolate Donut"
 TextBox93.TextColor = BrickColor.new("Really black")
 TextBox93.TextColor3 = Color3.new(0, 0, 0)
-TextBox93.TextSize = 32
+TextBox93.TextSize = 24
 TextBox93.TextWrap = true
 TextBox93.TextWrapped = true
 TextBox93.TextXAlignment = Enum.TextXAlignment.Left
@@ -2350,6 +2352,7 @@ script.Parent.Touched:connect(function(h)
 	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Espresso"
+		h.Parent.Steam.Steam.Enabled = true
 		if h.Parent:FindFirstChild("drink") ~= nil then
 			h.Parent.drink.Transparency = 0
 			h.Parent.drink.BrickColor = BrickColor.new("Brown")
@@ -2427,9 +2430,10 @@ script.Parent.Touched:connect(function(h)
 	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Decaf"
+		h.Parent.Steam.Steam.Enabled = true
 		if h.Parent:FindFirstChild("drink") ~= nil then
 			h.Parent.drink.Transparency = 0
-			h.Parent.drink.BrickColor = BrickColor.new("Brown")
+			h.Parent.drink.BrickColor = BrickColor.new("Nougat")
 		end
 	end
 end)
@@ -2499,6 +2503,7 @@ script.Parent.Touched:connect(function(h)
 	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Regular"
+		h.Parent.Steam.Steam.Enabled = true
 		if h.Parent:FindFirstChild("drink") ~= nil then
 			h.Parent.drink.Transparency = 0
 			h.Parent.drink.BrickColor = BrickColor.new("Brown")
@@ -2570,6 +2575,7 @@ script.Parent.Touched:connect(function(h)
 	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Cappuccino"
+		h.Parent.Steam.Steam.Enabled = true
 		if h.Parent:FindFirstChild("drink") ~= nil then
 			h.Parent.drink.Transparency = 0
 			h.Parent.drink.BrickColor = BrickColor.new("Brown")
@@ -11566,6 +11572,14 @@ SpecialMesh1010.MeshId = "http://www.roblox.com/asset/?id=255580072 "
 SpecialMesh1010.Scale = Vector3.new(0.20000000298023224, 0.20000000298023224, 0.20000000298023224)
 SpecialMesh1010.TextureId = "rbxassetid://3129257808"
 SpecialMesh1010.MeshType = Enum.MeshType.FileMesh
+Part1011.Parent = Model2
+Part1011.CFrame = CFrame.new(-74.8450089, 0.0830688477, -181.99028, 0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994)
+Part1011.Position = Vector3.new(-74.84500885009766, 0.08306884765625, -181.9902801513672)
+Part1011.Size = Vector3.new(4.089999675750732, 0.1661376953125, 1.8194580078125)
+Part1011.Anchored = true
+Part1011.BottomSurface = Enum.SurfaceType.Smooth
+Part1011.Material = Enum.Material.Slate
+Part1011.TopSurface = Enum.SurfaceType.Smooth
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = script
 	pcall(function() v:MakeJoints() end)
