@@ -25,7 +25,7 @@ while true do
 	wait(.1)
 	if game.Workspace:findFirstChild("finalcofe") == nil then --Change SpawnLocation to whatever part you want to regen
 			print("Who bulled my coffee Shop :c") --This message plays when the part is deleted
-			game.Workspace:findFirstChild("finalcofe"):Destroy()
+			--game.Workspace:findFirstChild("finalcofe"):Destroy()
 		local p = Instance.new("Script", workspace) --Change SpawnLocation to a kind of object (Part, Fire etc)
 		p.Name = "finalcofe"
 		print("Created")
