@@ -11515,7 +11515,6 @@ Part1003.Rotation = Vector3.new(0, 0, 25)
 Part1003.Size = Vector3.new(0.11999976634979248, 0.060000061988830566, 0.07999992370605469)
 Part1003.Anchored = true
 Part1003.BottomSurface = Enum.SurfaceType.Smooth
-Part1003.CustomPhysicalProperties = 1, 0.300000012, 0.5, 1, 1
 Part1003.TopSurface = Enum.SurfaceType.Smooth
 SpecialMesh1004.Parent = Part1003
 SpecialMesh1004.MeshId = "http://www.roblox.com/asset/?id=255580072 "
@@ -11531,7 +11530,6 @@ Part1005.Rotation = Vector3.new(0, 0, 25)
 Part1005.Size = Vector3.new(0.11999976634979248, 0.060000061988830566, 0.07999992370605469)
 Part1005.Anchored = true
 Part1005.BottomSurface = Enum.SurfaceType.Smooth
-Part1005.CustomPhysicalProperties = 1, 0.300000012, 0.5, 1, 1
 Part1005.TopSurface = Enum.SurfaceType.Smooth
 SpecialMesh1006.Parent = Part1005
 SpecialMesh1006.MeshId = "http://www.roblox.com/asset/?id=255580072 "
@@ -11547,7 +11545,6 @@ Part1007.Rotation = Vector3.new(0, 0, 25)
 Part1007.Size = Vector3.new(0.11999976634979248, 0.060000061988830566, 0.07999992370605469)
 Part1007.Anchored = true
 Part1007.BottomSurface = Enum.SurfaceType.Smooth
-Part1007.CustomPhysicalProperties = 1, 0.300000012, 0.5, 1, 1
 Part1007.TopSurface = Enum.SurfaceType.Smooth
 SpecialMesh1008.Parent = Part1007
 SpecialMesh1008.MeshId = "http://www.roblox.com/asset/?id=255580072 "
@@ -11563,7 +11560,6 @@ Part1009.Rotation = Vector3.new(0, 0, 25)
 Part1009.Size = Vector3.new(0.11999976634979248, 0.060000061988830566, 0.07999992370605469)
 Part1009.Anchored = true
 Part1009.BottomSurface = Enum.SurfaceType.Smooth
-Part1009.CustomPhysicalProperties = 1, 0.300000012, 0.5, 1, 1
 Part1009.TopSurface = Enum.SurfaceType.Smooth
 SpecialMesh1010.Parent = Part1009
 SpecialMesh1010.MeshId = "http://www.roblox.com/asset/?id=255580072 "
