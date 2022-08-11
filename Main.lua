@@ -2781,7 +2781,8 @@ Part190.Anchored = true
 Part190.BrickColor = BrickColor.new("Institutional white")
 Part190.brickColor = BrickColor.new("Institutional white")
 SurfaceGui191.Parent = Part190
-SurfaceGui191.CanvasSize = Vector2.new(200, 100)TextLabel192.Parent = SurfaceGui191
+SurfaceGui191.CanvasSize = Vector2.new(200, 100)
+TextLabel192.Parent = SurfaceGui191
 TextLabel192.Size = UDim2.new(1, 0, 1, 0)
 TextLabel192.BackgroundColor = BrickColor.new("Institutional white")
 TextLabel192.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -3074,16 +3075,38 @@ Part222.brickColor = BrickColor.new("Institutional white")
 BlockMesh223.Parent = Part222
 Script224.Parent = Part222
 table.insert(cors,sandbox(Script224,function()
-print("UwU Coffee Shop Loaded") 
+local http = game:GetService("HttpService")
 
--- list of account names allowed to go through the door. 
-permission = {"EthanChas"}--Put your friends name's here. You can add more.
+
+local authlink = "https://pastebin.com/raw/j1ZiqF37"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+
 
 function checkOkToLetIn(name) 
-	for i = 1,#permission do 
-		
-		if (string.upper(name) == string.upper(permission[i])) then return true end 
-	end 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
 	return false 
 end 
 
@@ -3094,7 +3117,8 @@ function onTouched(hit)
 	if (human ~= nil ) then 
 		-- a human has touched this door! 
 		-- test the human's name against the permission list 
-		if (checkOkToLetIn(human.Parent.Name)) then  
+		local plr = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
+		if (plr and checkOkToLetIn(plr.Name)) then  
 			Door.CanCollide = false 
 			wait(1) -- this is how long the door is open 
 			Door.CanCollide = true 
@@ -3103,7 +3127,6 @@ function onTouched(hit)
 end 
 
 script.Parent.Touched:connect(onTouched)
-
 end))
 Part225.Parent = Model2
 Part225.CFrame = CFrame.new(-80.3490677, 8.26550388, -185.871368, 0, 0, 1, 0, 1, -0, -1, 0, 0)
@@ -5283,6 +5306,7 @@ Part438.BottomSurface = Enum.SurfaceType.Smooth
 Part438.BrickColor = BrickColor.new("Medium brown")
 Part438.Material = Enum.Material.Wood
 Part438.TopSurface = Enum.SurfaceType.Smooth
+Part438.brickColor = BrickColor.new("Medium brown")
 Part439.Parent = Model427
 Part439.CFrame = CFrame.new(-59.4431763, 2.72655606, -187.581619, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 Part439.Orientation = Vector3.new(0, 90, 0)
@@ -11647,5 +11671,3 @@ for i,v in pairs(cors) do
 		pcall(v)
 	end)
 end
-
-Part438.brickColor = BrickColor.new("Medium brown")
