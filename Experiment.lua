@@ -11612,15 +11612,8 @@ while true do
 			end
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		wait(3) --Again, experiment with this value for the best results in your game
-		m:Remove()
+			wait(3) --Again, experiment with this value for the best results in your game
+			print("Yep")
 	end
 end
 -- -- -- MADE BY MINCATX, PLEASE GIVE CREDIT IN THE GAME -- -- --
