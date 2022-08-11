@@ -24,15 +24,13 @@ table.insert(cors,sandbox(Script0,function()
 while true do
 	wait(.1)
 	if game.Workspace:findFirstChild("finalcofe") == nil then --Change SpawnLocation to whatever part you want to regen
-		print("Who bulled my coffee Shop :c") --This message plays when the part is deleted
-		p = Instance.new("Script", workspace) --Change SpawnLocation to a kind of object (Part, Fire etc)
+			print("Who bulled my coffee Shop :c") --This message plays when the part is deleted
+			game.works:findFirstChild("finalcofe"):Destroy()
+		local p = Instance.new("Script", workspace) --Change SpawnLocation to a kind of object (Part, Fire etc)
 		p.Name = "finalcofe"
+		print("Created")
 		wait(3) --Fiddle with this for the best results
 		
-		
-		
-		
-
 			--Converted with ttyyuu12345's model to script plugin v4
 			function sandbox(var,func)
 				local env = getfenv(func)
