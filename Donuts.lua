@@ -183,7 +183,7 @@ Script1 = Instance.new("Script")
 Part2 = Instance.new("Part")
 SpecialMesh3 = Instance.new("SpecialMesh")
 Sound4 = Instance.new("Sound")
-Tool0.Name = "Chocolate Donut"
+Tool0.Name = "Cherry Donut"
 Tool0.Parent = mas
 Script1.Name = "scrip"
 Script1.Parent = Tool0
@@ -225,7 +225,7 @@ Part2.TopSurface = Enum.SurfaceType.Smooth
 SpecialMesh3.Parent = Part2
 SpecialMesh3.MeshId = "http://www.roblox.com/asset/?id=255580072 "
 SpecialMesh3.Scale = Vector3.new(0.20000000298023224, 0.20000000298023224, 0.20000000298023224)
-SpecialMesh3.TextureId = "rbxassetid://3129100566"
+SpecialMesh3.TextureId = "rbxassetid://3129257808"
 SpecialMesh3.MeshType = Enum.MeshType.FileMesh
 Sound4.Name = "DrinkSound"
 Sound4.Parent = Part2
