@@ -1,6 +1,6 @@
 -- -- -- MADE BY MINCATX, PLEASE GIVE CREDIT IN THE GAME -- -- --
 while true do
-	wait(.1)
+	wait(4)
 	if game.Workspace:findFirstChild("finalcofe") == nil then --Change SpawnLocation to whatever part you want to regen
 		
 		p = Instance.new("Script", workspace) --Change SpawnLocation to a kind of object (Part, Fire etc)
