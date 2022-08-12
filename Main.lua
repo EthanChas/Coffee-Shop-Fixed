@@ -2409,8 +2409,12 @@ Script110.Parent = Part109
 table.insert(cors,sandbox(Script110,function()
 function tch(h)
 if (h.Parent.Name == "Cup") then
-script.Parent.Sound:Play()
-h.Parent.Name = "Milk"
+	script.Parent.Sound:Play()
+	h.Parent.Name = "Milk"
+	if h.Parent:FindFirstChild("drink") ~= nil then
+		h.Parent.drink.Transparency = 0
+		h.Parent.drink.BrickColor = BrickColor.new("White")
+	end
 end
 end
 
@@ -2686,7 +2690,7 @@ Part144.CanCollide = false
 Script145.Parent = Part144
 table.insert(cors,sandbox(Script145,function()
 script.Parent.Touched:connect(function(h)
-	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
+	if h.Parent.Name == "Hot Milk" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Regular"
 		h.Parent.Steam.Steam.Enabled = true
@@ -2753,7 +2757,7 @@ Part151.CanCollide = false
 Script152.Parent = Part151
 table.insert(cors,sandbox(Script152,function()
 script.Parent.Touched:connect(function(h)
-	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
+	if h.Parent.Name == "Hot Milk" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Cappuccino"
 		h.Parent.Steam.Steam.Enabled = true
@@ -2821,7 +2825,7 @@ Part159.formFactor = Enum.FormFactor.Symmetric
 Script160.Parent = Part159
 table.insert(cors,sandbox(Script160,function()
 script.Parent.Touched:connect(function(h)
-	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
+	if h.Parent.Name == "Hot Milk" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Hot Chocolate"
 		h.Parent.Steam.Steam.Enabled = true
@@ -3278,7 +3282,7 @@ Part211.CanCollide = false
 Script212.Parent = Part211
 table.insert(cors,sandbox(Script212,function()
 script.Parent.Touched:connect(function(h)
-	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
+	if h.Parent.Name == "Hot Milk" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Espresso"
 		h.Parent.Steam.Steam.Enabled = true
@@ -3351,7 +3355,7 @@ Part218.CanCollide = false
 Script219.Parent = Part218
 table.insert(cors,sandbox(Script219,function()
 script.Parent.Touched:connect(function(h)
-	if h.Parent.Name == "Mug" or h.Parent.Name == "Cup" or h.Parent.Name == "Koozie Cup" then
+	if h.Parent.Name == "Hot Milk" then
 		script.Parent.Sound:Play()
 		h.Parent.Name = "Decaf"
 		h.Parent.Steam.Steam.Enabled = true
