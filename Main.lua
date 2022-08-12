@@ -1245,6 +1245,10 @@ Part1225 = Instance.new("Part")
 SurfaceGui1226 = Instance.new("SurfaceGui")
 TextBox1227 = Instance.new("TextBox")
 WeldConstraint1228 = Instance.new("WeldConstraint")
+Part1229 = Instance.new("Part")
+Script1230 = Instance.new("Script")
+Part1231 = Instance.new("Part")
+Script1232 = Instance.new("Script")
 Folder0.Name = "coffee shop"
 Folder0.Parent = mas
 Model1.Name = "Main"
@@ -4507,10 +4511,10 @@ Part328.Material = Enum.Material.SmoothPlastic
 Part328.TopSurface = Enum.SurfaceType.Smooth
 Part328.brickColor = BrickColor.new("Flint")
 Part329.Parent = Model1
-Part329.CFrame = CFrame.new(-28.2674942, 4.56826448, -240.291992, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part329.Position = Vector3.new(-28.267494201660156, 4.568264484405518, -240.2919921875)
+Part329.CFrame = CFrame.new(-28.2274971, 4.56826448, -240.291992, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part329.Position = Vector3.new(-28.227497100830078, 4.568264484405518, -240.2919921875)
 Part329.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part329.Size = Vector3.new(0.13137435913085938, 9.511244773864746, 12.838433265686035)
+Part329.Size = Vector3.new(0.21137046813964844, 9.511244773864746, 12.838433265686035)
 Part329.Anchored = true
 Part329.BottomSurface = Enum.SurfaceType.Smooth
 Part329.BrickColor = BrickColor.new("Tawny")
@@ -7313,9 +7317,9 @@ end)
 end))
 Part587.Name = "DoorClosed"
 Part587.Parent = Model575
-Part587.CFrame = CFrame.new(-53.1119652, 5.34565639, -214.973343, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Part587.CFrame = CFrame.new(-55.5849838, 3.32294273, -218.512344, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 Part587.Orientation = Vector3.new(0, -90, 0)
-Part587.Position = Vector3.new(-53.11196517944336, 5.345656394958496, -214.9733428955078)
+Part587.Position = Vector3.new(-55.584983825683594, 3.3229427337646484, -218.51234436035156)
 Part587.Rotation = Vector3.new(0, -90, 0)
 Part587.Color = Color3.new(0.686275, 0.580392, 0.513726)
 Part587.Transparency = 1
@@ -12809,10 +12813,10 @@ Part1091.Material = Enum.Material.Glass
 Part1091.Reflectance = 0.4000000059604645
 Part1091.TopSurface = Enum.SurfaceType.Smooth
 Part1092.Parent = Model1090
-Part1092.CFrame = CFrame.new(-28.2674961, 8.7080164, -226.098785, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part1092.Position = Vector3.new(-28.26749610900879, 8.708016395568848, -226.09878540039062)
+Part1092.CFrame = CFrame.new(-28.2274971, 8.7080164, -226.098785, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1092.Position = Vector3.new(-28.227497100830078, 8.708016395568848, -226.09878540039062)
 Part1092.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part1092.Size = Vector3.new(0.13137435913085938, 1.2370977401733398, 15.75999927520752)
+Part1092.Size = Vector3.new(0.21137237548828125, 1.2370977401733398, 15.75999927520752)
 Part1092.Anchored = true
 Part1092.BottomSurface = Enum.SurfaceType.Smooth
 Part1092.BrickColor = BrickColor.new("Tawny")
@@ -12856,10 +12860,10 @@ Part1095.Reflectance = 0.4000000059604645
 Part1095.TopSurface = Enum.SurfaceType.Smooth
 Part1095.brickColor = BrickColor.new("Dark stone grey")
 Part1096.Parent = Model1090
-Part1096.CFrame = CFrame.new(-28.2674961, 2.91441965, -226.095627, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part1096.Position = Vector3.new(-28.26749610900879, 2.914419651031494, -226.0956268310547)
+Part1096.CFrame = CFrame.new(-28.2274971, 2.91441965, -226.095627, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1096.Position = Vector3.new(-28.227497100830078, 2.914419651031494, -226.0956268310547)
 Part1096.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part1096.Size = Vector3.new(0.13137435913085938, 6.37570858001709, 15.753714561462402)
+Part1096.Size = Vector3.new(0.21137428283691406, 6.37570858001709, 15.753714561462402)
 Part1096.Anchored = true
 Part1096.BottomSurface = Enum.SurfaceType.Smooth
 Part1096.BrickColor = BrickColor.new("Tawny")
@@ -12867,10 +12871,10 @@ Part1096.Material = Enum.Material.Brick
 Part1096.TopSurface = Enum.SurfaceType.Smooth
 Part1096.brickColor = BrickColor.new("Tawny")
 Part1097.Parent = Model1090
-Part1097.CFrame = CFrame.new(-28.2674961, 7.09587097, -219.945862, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part1097.Position = Vector3.new(-28.26749610900879, 7.0958709716796875, -219.94586181640625)
+Part1097.CFrame = CFrame.new(-28.2274971, 7.09587097, -219.945862, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1097.Position = Vector3.new(-28.227497100830078, 7.0958709716796875, -219.94586181640625)
 Part1097.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part1097.Size = Vector3.new(0.13137435913085938, 1.987194299697876, 3.454150676727295)
+Part1097.Size = Vector3.new(0.21137237548828125, 1.987194299697876, 3.454150676727295)
 Part1097.Anchored = true
 Part1097.BottomSurface = Enum.SurfaceType.Smooth
 Part1097.BrickColor = BrickColor.new("Tawny")
@@ -12914,10 +12918,10 @@ Part1100.Reflectance = 0.4000000059604645
 Part1100.TopSurface = Enum.SurfaceType.Smooth
 Part1100.brickColor = BrickColor.new("Dark stone grey")
 Part1101.Parent = Model1090
-Part1101.CFrame = CFrame.new(-28.2674961, 7.09587097, -233.045059, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Part1101.Position = Vector3.new(-28.26749610900879, 7.0958709716796875, -233.04505920410156)
+Part1101.CFrame = CFrame.new(-28.2274971, 7.09587097, -233.045059, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1101.Position = Vector3.new(-28.227497100830078, 7.0958709716796875, -233.04505920410156)
 Part1101.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part1101.Size = Vector3.new(0.13137435913085938, 1.9871935844421387, 1.854832649230957)
+Part1101.Size = Vector3.new(0.21137237548828125, 1.9871935844421387, 1.854832649230957)
 Part1101.Anchored = true
 Part1101.BottomSurface = Enum.SurfaceType.Smooth
 Part1101.BrickColor = BrickColor.new("Tawny")
@@ -13465,9 +13469,9 @@ Part1148.TopSurface = Enum.SurfaceType.Smooth
 Part1148.brickColor = BrickColor.new("Dark taupe")
 Part1148.Shape = Enum.PartType.Cylinder
 Part1149.Parent = Model1
-Part1149.CFrame = CFrame.new(-28.4331779, 0.196565509, -218.695724, 0, 0, 1, 1, 0, 0, 0, 0.999999881, 0)
+Part1149.CFrame = CFrame.new(-28.3731785, 0.196565509, -218.695724, 0, 0, 1, 1, 0, 0, 0, 0.999999881, 0)
 Part1149.Orientation = Vector3.new(0, 90, 90)
-Part1149.Position = Vector3.new(-28.433177947998047, 0.19656550884246826, -218.6957244873047)
+Part1149.Position = Vector3.new(-28.373178482055664, 0.19656550884246826, -218.6957244873047)
 Part1149.Rotation = Vector3.new(90, 90, 0)
 Part1149.Color = Color3.new(0.352941, 0.298039, 0.258824)
 Part1149.Size = Vector3.new(0.25999999046325684, 0.4399999678134918, 1.0799999237060547)
@@ -13479,9 +13483,9 @@ Part1149.TopSurface = Enum.SurfaceType.Smooth
 Part1149.brickColor = BrickColor.new("Dark taupe")
 Part1149.Shape = Enum.PartType.Cylinder
 Part1150.Parent = Model1
-Part1150.CFrame = CFrame.new(-28.4331779, 4.67655849, -218.695724, 0, 0, 1, 1, 0, 0, 0, 1, 0)
+Part1150.CFrame = CFrame.new(-28.3731785, 4.67655849, -218.695724, 0, 0, 1, 1, 0, 0, 0, 1, 0)
 Part1150.Orientation = Vector3.new(0, 90, 90)
-Part1150.Position = Vector3.new(-28.433177947998047, 4.676558494567871, -218.6957244873047)
+Part1150.Position = Vector3.new(-28.373178482055664, 4.676558494567871, -218.6957244873047)
 Part1150.Rotation = Vector3.new(90, 90, 0)
 Part1150.Color = Color3.new(0.411765, 0.4, 0.360784)
 Part1150.Size = Vector3.new(9.300000190734863, 0.3999999761581421, 1)
@@ -13525,12 +13529,12 @@ Part1153.Material = Enum.Material.SmoothPlastic
 Part1153.TopSurface = Enum.SurfaceType.Smooth
 Part1153.brickColor = BrickColor.new("Flint")
 Part1154.Parent = Model1
-Part1154.CFrame = CFrame.new(-28.4374962, 4.52522707, -201.838272, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Part1154.CFrame = CFrame.new(-28.3974953, 4.52522707, -201.838272, 0, 0, 1, 0, 1, 0, -1, 0, 0)
 Part1154.Orientation = Vector3.new(0, 90, 0)
-Part1154.Position = Vector3.new(-28.437496185302734, 4.525227069854736, -201.83827209472656)
+Part1154.Position = Vector3.new(-28.39749526977539, 4.525227069854736, -201.83827209472656)
 Part1154.Rotation = Vector3.new(0, 90, 0)
 Part1154.Color = Color3.new(0.588235, 0.333333, 0.333333)
-Part1154.Size = Vector3.new(32.838966369628906, 9.597323417663574, 0.4713728427886963)
+Part1154.Size = Vector3.new(32.838966369628906, 9.597323417663574, 0.5513728260993958)
 Part1154.Anchored = true
 Part1154.BottomSurface = Enum.SurfaceType.Smooth
 Part1154.BrickColor = BrickColor.new("Tawny")
@@ -14228,8 +14232,8 @@ end)
 end))
 Part1219.Name = "DoorClosed"
 Part1219.Parent = Model1207
-Part1219.CFrame = CFrame.new(-34.4228592, 5.4194994, -201.556763, 0.999998569, 0, 0, 0, 1, 0, 0, 0, 0.999998569)
-Part1219.Position = Vector3.new(-34.42285919189453, 5.419499397277832, -201.5567626953125)
+Part1219.CFrame = CFrame.new(-37.961853, 3.39678645, -199.083755, 0.999998569, 0, 0, 0, 1, 0, 0, 0, 0.999998569)
+Part1219.Position = Vector3.new(-37.96185302734375, 3.3967864513397217, -199.08375549316406)
 Part1219.Color = Color3.new(0.686275, 0.580392, 0.513726)
 Part1219.Transparency = 1
 Part1219.Size = Vector3.new(0.0883636549115181, 6.539999961853027, 3.9580235481262207)
@@ -14242,10 +14246,10 @@ Part1219.TopSurface = Enum.SurfaceType.Smooth
 Part1219.brickColor = BrickColor.new("Linen")
 Part1220.Name = "DoorOpened"
 Part1220.Parent = Model1207
-Part1220.CFrame = CFrame.new(-39.6938477, 3.39678645, -198.083755, 0.499999255, 0, 0.866024137, 0, 1, 0, -0.866024137, 0, 0.499999255)
-Part1220.Orientation = Vector3.new(0, 60, 0)
-Part1220.Position = Vector3.new(-39.69384765625, 3.3967864513397217, -198.08375549316406)
-Part1220.Rotation = Vector3.new(0, 60, 0)
+Part1220.CFrame = CFrame.new(-39.9541702, 3.39678645, -196.909454, -0.087155737, 0, 0.99619472, 0, 1, 0, -0.99619472, 0, -0.0871557295)
+Part1220.Orientation = Vector3.new(0, 95, 0)
+Part1220.Position = Vector3.new(-39.95417022705078, 3.3967864513397217, -196.90945434570312)
+Part1220.Rotation = Vector3.new(-180, 85, -180)
 Part1220.Color = Color3.new(0.686275, 0.580392, 0.513726)
 Part1220.Transparency = 1
 Part1220.Size = Vector3.new(0.0883636549115181, 6.539999961853027, 3.9580235481262207)
@@ -14308,6 +14312,146 @@ TextBox1227.PlaceholderColor3 = Color3.new(0.333333, 1, 0)
 WeldConstraint1228.Parent = Part1225
 WeldConstraint1228.Part0 = Part1225
 WeldConstraint1228.Part1 = Part1221
+Part1229.Name = "Getout"
+Part1229.Parent = Model1
+Part1229.CFrame = CFrame.new(-34.8664322, 0.527366161, -208.590073, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1229.Position = Vector3.new(-34.866432189941406, 0.5273661613464355, -208.59007263183594)
+Part1229.Color = Color3.new(0.431373, 0.6, 0.792157)
+Part1229.Transparency = 1
+Part1229.Size = Vector3.new(4.958414077758789, 0.019999027252197266, 22.159997940063477)
+Part1229.Anchored = true
+Part1229.BottomSurface = Enum.SurfaceType.Smooth
+Part1229.BrickColor = BrickColor.new("Medium blue")
+Part1229.CanCollide = false
+Part1229.Reflectance = 2
+Part1229.TopSurface = Enum.SurfaceType.Smooth
+Part1229.brickColor = BrickColor.new("Medium blue")
+Script1230.Parent = Part1229
+table.insert(cors,sandbox(Script1230,function()
+local http = game:GetService("HttpService")
+
+
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+
+local parent_transparency = script.Parent.Transparency 
+
+function onTouched(hit)
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")
+	local plr = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
+	if humanoid ~= nil and plr then
+		if checkOkToLetIn(plr.Name) then
+			--Nothing
+		else
+			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+		end
+	end
+end
+
+script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
+
+-- also made better by wapplee
+-- have a nice day--
+end))
+Part1231.Name = "Getout"
+Part1231.Parent = Model1
+Part1231.CFrame = CFrame.new(-44.0068741, 0.527366161, -207.460083, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1231.Position = Vector3.new(-44.006874084472656, 0.5273661613464355, -207.4600830078125)
+Part1231.Color = Color3.new(0.431373, 0.6, 0.792157)
+Part1231.Transparency = 1
+Part1231.Size = Vector3.new(9.5584135055542, 0.019999027252197266, 18.479999542236328)
+Part1231.Anchored = true
+Part1231.BottomSurface = Enum.SurfaceType.Smooth
+Part1231.BrickColor = BrickColor.new("Medium blue")
+Part1231.CanCollide = false
+Part1231.Reflectance = 2
+Part1231.TopSurface = Enum.SurfaceType.Smooth
+Part1231.brickColor = BrickColor.new("Medium blue")
+Script1232.Parent = Part1231
+table.insert(cors,sandbox(Script1232,function()
+local http = game:GetService("HttpService")
+
+
+local authlink = "https://glot.io/snippets/gcid1oo20b/raw/main.lua"
+
+local authorized = {}
+
+function getAuthed()
+	authorized = {}
+	local str = http:GetAsync(authlink)
+	local rows = str:split("\n")
+	for _,v in pairs(rows) do
+		local split = v:split(":")
+		local name = split[1]
+		local rank = split[2]
+		table.insert(authorized,split)
+	end
+	task.delay(7.5,getAuthed)
+end
+getAuthed()
+
+
+
+
+function checkOkToLetIn(name) 
+	for _,v in pairs(authorized) do
+		if v[1]:lower() == name:lower() then
+			return true
+		end
+	end
+	return false 
+end 
+
+
+
+local parent_transparency = script.Parent.Transparency 
+
+function onTouched(hit)
+	local humanoid = hit.Parent:FindFirstChild("Humanoid")
+	local plr = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
+	if humanoid ~= nil and plr then
+		if checkOkToLetIn(plr.Name) then
+			--Nothing
+		else
+			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+		end
+	end
+end
+
+script.Parent.Touched:connect(onTouched)-- smart vip script by hamham1111--
+
+-- also made better by wapplee
+-- have a nice day--
+end))
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = script
 	pcall(function() v:MakeJoints() end)
