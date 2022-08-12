@@ -3515,15 +3515,16 @@ table.insert(cors,sandbox(Script237,function()
 function tch(h)
 if (h.Parent.Name == "Cup") then
 	script.Parent.Sound:Play()
-	h.Parent.Name = "Milk"
+	h.Parent.Name = "Water"
 	if h.Parent:FindFirstChild("drink") ~= nil then
-		h.Parent.drink.Transparency = 0
-		h.Parent.drink.BrickColor = BrickColor.new("White")
+		h.Parent.drink.Transparency = 0.4
+		h.Parent.drink.BrickColor = BrickColor.new("Navy blue")
 	end
 end
 end
 
 script.Parent.Touched:connect(tch)
+
 
 end))
 Sound238.Parent = Part236
