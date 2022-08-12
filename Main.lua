@@ -3525,7 +3525,6 @@ end
 
 script.Parent.Touched:connect(tch)
 
-
 end))
 Sound238.Parent = Part236
 Sound238.SoundId = "http://www.roblox.com/asset/?id=183551404"
@@ -15473,4 +15472,3 @@ for i,v in pairs(cors) do
 		pcall(v)
 	end)
 end
-
