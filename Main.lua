@@ -15501,6 +15501,7 @@ Seat1353.Orientation = Vector3.new(0, -90, 0)
 Seat1353.Position = Vector3.new(-47.597747802734375, 1.3244988918304443, -241.0412139892578)
 Seat1353.Rotation = Vector3.new(0, -90, 0)
 Seat1353.Transparency = 1
+Seat1353.Anchored = true
 Seat1353.Size = Vector3.new(1.7608779668807983, 1.9143767356872559, 1.7655893564224243)
 Seat1353.FormFactor = Enum.FormFactor.Custom
 Seat1353.formFactor = Enum.FormFactor.Custom
