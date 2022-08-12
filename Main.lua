@@ -12997,7 +12997,7 @@ function onTouched(hit)
 		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
-			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+			--hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
 		end
 	end
 end
@@ -13068,7 +13068,7 @@ function onTouched(hit)
 		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
-			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+			--hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
 		end
 	end
 end
@@ -13139,7 +13139,7 @@ function onTouched(hit)
 		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
-			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+			--hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
 		end
 	end
 end
@@ -13210,7 +13210,7 @@ function onTouched(hit)
 		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
-			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+			--hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
 		end
 	end
 end
@@ -13281,7 +13281,7 @@ function onTouched(hit)
 		if checkOkToLetIn(plr.Name) then
 			--Nothing
 		else
-			hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
+			--hit.Parent:BreakJoints() -- remove this line if you want a non-killing door
 		end
 	end
 end
